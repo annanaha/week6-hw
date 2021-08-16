@@ -1,10 +1,71 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首頁</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="header text-center">
+      <div class="navbox container">
+      <a href="index.html">
+      <h3 class="text-primary justify-content-center">EXHIBINECTION</h3>
+    </a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active"  href="#">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#" >
+          <span class="material-icons">
+            confirmation_number
+            </span>
+            <span class="confir-number">3</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <!-- banner -->
+  <div class="banner d-flex align-items-center">
+        <div class="card offset-1">
+          <div class="card-body">
+            <h1 class="card-title fw-bold">台北當代藝術展</h1>
+            <p class="card-text fw-bold">01 JUN - 31 OCT</p>
+            <div class="">
+            <a href="#" class="btn btn-secondary me-2">購買票券</a>
+            <a href="#" class="btn btn-detail">詳細資訊</a>
+          </div>
+          </div>
+        </div>
+  </div>
+
+  <!-- 導覽列 -->
+  <ul class="navbar list-unstyled mb-0">
+    <li class="nav-item "><a class="nav-link" href="#">音樂</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">戲劇</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">設計</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">藝術</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">美食</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">旅遊</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">電影</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">親子</a></li>
+    <li class="nav-item "><a class="nav-link" href="#">期間限定</a></li>
+  </ul>
+
+    
 <main class="py-7">
     <div class="container">
         <h1 class="h1-category fw-bold mb-4">熱門特展</h1>
@@ -59,3 +120,10 @@ current: index
         </ul>
     </div>
 </main>
+
+   
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
