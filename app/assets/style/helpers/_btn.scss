@@ -1,0 +1,35 @@
+.nav-link{
+    color: $dark;
+    &:hover{
+      color: $dark;
+      border-bottom: 1px solid $secondary;
+    }
+  }
+  .btn-hover{
+    color: $black;
+    transition: .3s;
+    &:hover{
+      border-bottom: 1px solid $secondary;
+    }
+  }
+  .btn-active{
+    border-bottom: 1px solid $secondary;
+  }
+
+  .count{
+    input{
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        border: 0;
+    }
+    .count-num{
+        margin: 0 12px;
+    }
+    .minus-btn{
+        position: relative;
+    }
+    .conunt-icon{
+        position: absolute;
+    }
+}

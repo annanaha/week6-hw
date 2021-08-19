@@ -1,0 +1,51 @@
+//  卷軸樣式 
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+  }
+//   隱藏滾動條
+.scroll-hide{
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+  
+
+//邊框
+.border-r{
+    border:0;
+}
+
+.border-md-r{
+    @include pad{
+        border-right: 1px solid $dark;
+    }   
+} 
+// 購物車預覽圖片
+.cartpreview-img{
+    width: 120px;
+    height: 120px;
+}
+
+//z-index
+.nav-zindex{
+    z-index: 1090 !important;
+
+}

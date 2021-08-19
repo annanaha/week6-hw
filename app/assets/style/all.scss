@@ -3,8 +3,15 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import 'setting/_base.scss';
-@import 'setting/_util.scss';
+@import 'setting/_mixin.scss';
+
+@import 'utilities/_utilities.scss';
+
+@import 'helpers/_btn.scss';
+@import 'helpers/_style.scss';
 
 
 @import './layout/_layout.scss';
 @import './page/_index.scss';
+@import './page/_cart-p1.scss';
+@import './page/_cart-p2.scss';

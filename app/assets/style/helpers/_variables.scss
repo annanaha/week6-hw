@@ -252,13 +252,19 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 2, //3
-  6: $spacer * 2.5, //新增40px
-  7: $spacer * 3.75, //新增60px
+  1: $spacer * .25, //4
+  2: $spacer * .5,  //8
+  3: $spacer * .625,  //10
+  4: $spacer * .75, //12
+  5: $spacer * 0.875, //14
+  6: $spacer * 1, //16
+  7: $spacer * 1.25, //20
+  8: $spacer * 1.5, //24
+  9: $spacer * 2, //32
+  10: $spacer * 2.5, //40
+  11: $spacer * 3, //48
+  12: $spacer * 3.75, //60
+  13: $spacer * 5, //80
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -347,7 +353,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem !default; //1.5
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -420,7 +426,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: Roboto,"Noto Sans",system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,  "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -446,12 +452,15 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2 !default; //2.5
-$h2-font-size:                $font-size-base * 1.75 !default;//2
-$h3-font-size:                $font-size-base * 1.5 !default;//1.75
-$h4-font-size:                $font-size-base * 1.25 !default;//1.5
-$h5-font-size:                $font-size-base * 1.25 !default;//1.25
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5 !default; //2.5 40px
+$h2-font-size:                $font-size-base * 2.25 !default;//2  36
+$h3-font-size:                $font-size-base * 2 !default;//1.75 32
+$h4-font-size:                $font-size-base * 1.75 !default;//1.5  28
+$h5-font-size:                $font-size-base * 1.5 !default;//1.25 24
+$h6-font-size:                $font-size-base * 1.25 !default; //20
+$h7-font-size:                $font-size-base !default; //16
+$h8-font-size:                $font-size-base * 0.875 !default; //14
+
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -461,7 +470,10 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+
 ) !default;
 // scss-docs-end font-sizes
 
@@ -912,7 +924,7 @@ $zindex-dropdown:                   1000 !default;
 $zindex-sticky:                     1020 !default;
 $zindex-fixed:                      1030 !default;
 $zindex-modal-backdrop:             1040 !default;
-$zindex-offcanvas:                  1050 !default;
+$zindex-offcanvas:                  1050 !default;//1050
 $zindex-modal:                      1060 !default;
 $zindex-popover:                    1070 !default;
 $zindex-tooltip:                    1080 !default;
@@ -1088,7 +1100,7 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     0 !default;//$spacer
-$card-title-spacer-y:               $spacer * .5 !default;
+$card-title-spacer-y:               $spacer * 0 !default; //.5
 $card-border-width:                 0 !default;//$border-width
 $card-border-radius:                0 !default;
 $card-border-color:                 rgba($black, .125) !default;
@@ -1448,7 +1460,7 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // scss-docs-start offcanvas-variables
 $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-x:               $modal-inner-padding !default;
-$offcanvas-horizontal-width:        400px !default;
+$offcanvas-horizontal-width:        540px !default;//400
 $offcanvas-vertical-height:         30vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;

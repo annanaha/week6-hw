@@ -1,10 +1,24 @@
+
 .exhibition{
-    // font-family: Roboto,"Noto Sans", sans-serif;
-    .exhi-img{
-        object-fit: cover;
-    }
-    .exhi-main{
-        width: 75%;        
+    .fblink-mobile{
+        width: 20px;
+        height: 20px;
     }
 
 }
+// 直播回顧
+.live{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true);
+    background-position: center;
+    background-size: cover;
+    .card{
+        background-color: #190014CC;
+    }
+
+}
+
+
+
+
+
+
